@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
@@ -10,9 +10,8 @@ import {
   NavLink,
 } from 'reactstrap';
 
-export default class HeaderBar extends Component { 
-  render() {
-    const { items } = this.props;
+  function HeaderBar(props) {
+    const { items } = props;
     return (
       <div>
         <Navbar color="light" light expand="md">
@@ -34,7 +33,6 @@ export default class HeaderBar extends Component {
       </div>
     );
   }
-}
 HeaderBar.propTypes = {
   items: PropTypes.arrayOf(PropTypes.shape({
     url: PropTypes.string.isRequired,
@@ -42,3 +40,4 @@ HeaderBar.propTypes = {
   }))
 }
 
+export default HeaderBar;
