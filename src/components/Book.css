@@ -1,0 +1,27 @@
+.BookContainer {
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  box-shadow: 3px 7px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  font-family: "Roboto", sans-serif;
+}
+.BookContainer div {
+  flex-grow: 1;
+  padding-top: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.1) ;
+}
+.BookContainer img {
+  width: 64px;
+}
+.BookContainer .BookCover {
+  flex-grow: 0.3;
+  padding-top: 0;
+}
+
+.BookContainer .BookTitle {
+  font-weight: 700;
+}
+.BookContainer .Description {
+  font-style: italic;
+}
