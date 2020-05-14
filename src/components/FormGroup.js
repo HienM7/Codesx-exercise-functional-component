@@ -1,12 +1,11 @@
 
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import './FormGroup.css';
 
- class FormGroup extends Component {
 
-  render() {
-    const { label } = this.props;
+  function FormGroup(props) {
+    const { label } = props;
     return (
       <div className="FormGroup">
         <label for="fname">{label}</label>
@@ -14,7 +13,6 @@ import './FormGroup.css';
       </div>
      );
   }
-}
 
 FormGroup.propTypes = {
  label: PropTypes.string.isRequired
